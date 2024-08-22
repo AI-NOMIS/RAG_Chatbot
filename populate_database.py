@@ -11,6 +11,10 @@ from langchain_chroma import Chroma
 CHROMA_PATH = "chroma"
 DATA_PATH = "data"
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 
 def main():
 
