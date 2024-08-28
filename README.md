@@ -34,3 +34,12 @@ python3 populate_database.py
 ```
 python query_data.py "I want to generate images"
 ```
+
+# Update firewall rules to add server port
+
+```
+sudo firewall-cmd --list-all # To check existing added ports
+sudo firewall-cmd --zone=public --permanent --add-port 8000/tcp
+sudo firewall-cmd --reload
+sudo firewall-cmd --list-all # Confirm that port has been added.
+```
