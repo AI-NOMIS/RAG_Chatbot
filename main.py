@@ -8,8 +8,10 @@ import json
 app = FastAPI()
 
 origins = [
-    "http://localhost",
+    "http://localhost:3000",
     "http://localhost:5173",
+    'https://api.nocodingai.com',
+    'https://dev.api.nocodingai.com',
     'https://dev.nocodingai.com',
     'https://pro.nocodingai.com',
 ]
